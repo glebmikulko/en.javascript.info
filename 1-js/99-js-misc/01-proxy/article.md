@@ -284,6 +284,7 @@ user = new Proxy(user, {
       throw new Error("Access denied");
     } else {
       target[prop] = val;
+      return true;
     }
   },
 *!*
